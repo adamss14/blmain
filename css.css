@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -28,7 +29,9 @@ h1{
 
 .header {
     position: relative;
-    box-shadow: 0px 3px 3px red;
+    border-bottom: 5px #d8151d solid;
+    border-radius: 30px;;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -43,7 +46,6 @@ h1{
 
 
 .navbar a {
-    float: left;
     color: black;
     text-align: center;
     padding: 15px;
@@ -58,20 +60,23 @@ h1{
 .navbar a{
     text-align: center;
     display: inline-block;
+    transition: all .2s ease-in-out;
 }
 
 .navbar a:hover {
     border-bottom: 4px #d8151d solid;
-    border-radius: 1px;
+    border-radius: 5px;
     color: black;
+    transform: scale(1.1);
 }
 
 
 
 .header a.aktivni {
     border-bottom: 4px #d8151d solid;
-    border-radius: 1px;
+    border-radius: 5px;
     color: black;
+    scale: 1.1;
 }
 
 .ikony
@@ -98,6 +103,11 @@ h1{
     font-size: 24px;
     color: #d8151d;
     transform: rotate(-45deg);
+    transition: all .1s ease-in-out;
+}
+
+.ikony a :hover{
+    transform: scale(1.1);
 }
 
 
@@ -121,7 +131,7 @@ h1{
     background-size: cover;
     width: 100%;
     height: 20%;
-    box-shadow: 0 2px 2px red;;
+    box-shadow: 0 2px 2px #3f434c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,6 +147,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: left;
     color: black;
     height: 100vh;
     letter-spacing: 1px;
@@ -152,10 +163,11 @@ h1{
     border: 2px solid #d8151d;
     text-decoration: none;
     cursor: pointer;
+
     font-weight: 600;
     border-radius: 5px;
-    width: 150px;
-    height:45px;
+    width: 180px;
+    height:50px;
 
 }
 .content-pismo button:hover{
@@ -289,6 +301,7 @@ h1{
 .sluzby-doprava{
     border: 2px solid #d8151d;
     box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
+
     border-radius: 15px;
     font-size: 20px;
     font-weight: 300;
@@ -322,8 +335,10 @@ h1{
 
 }
 
+
 .sluzby-skladovani{
     border: 2px solid #d8151d;
+    opacity: 1;
     box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
     border-radius: 15px;
     font-size: 20px;
@@ -355,8 +370,26 @@ h1{
 .sluzby-skladovani button:hover{
     text-decoration: underline;
     cursor: pointer;
-
 }
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 
 
