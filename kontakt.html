@@ -1,87 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="cs-cz">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boland Logistics</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
-    }
 
-    header {
-      background-color: #2c3e50;
-      color: #ecf0f1;
-      padding: 20px;
-      text-align: center;
-    }
+  <title>boland - Autodoprava a logistika</title>
+  <link rel="stylesheet" href="css.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    nav {
-      background-color: #34495e;
-      overflow: hidden;
-    }
-
-    nav a {
-      float: left;
-      display: block;
-      color: #ecf0f1;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #2c3e50;
-      color: #fff;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: #ecf0f1;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Boland Logistics</h1>
-</header>
+<div class="header">
+  <a href="index.html" id="logo" data-aos="fade-down" data-aos-duration="850" data-aos-delay="200"><img src="images/logo.png" height="50"/></a>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Services</a>
-  <a href="#">Track Shipment</a>
-  <a href="#">Contact</a>
-</nav>
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
+    <a href="index.html">O nás</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="kariera.html">Kariéra</a>
+    <a class="aktivni" href="kontakt.html">Kontakty</a>
+    <a href="index.html">xdxd</a>
+  </nav>
 
-<main>
-  <h2>Welcome to Boland Logistics</h2>
-  <p>Your trusted partner for efficient and reliable logistics solutions.</p>
+  <div class="ikony" data-aos="fade-down" data-aos-duration="850"
+       data-aos-delay="300">
+    <a href=""><i class='bx bxl-facebook'></i></a>
+    <a href=""><i class='bx bxl-twitter'></i></a>
 
-  <!-- Add more content here as needed -->
+  </div>
+</div>
 
-</main>
+<div class="kontakt-poptavka" >
+  <div class="kontakt1" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
+    <p class="kontakt-typ">Skladování</p>
+    <div class="kontakt-letter">
+      <img src="images/kontakt-letter.png" height="32" width="55"/>
+    </div>
+    <div class="kontakt-udaje">
+    <p class="kontakt-jmeno">Jan Novák</p>
+    <p class="kontakt-cislo">+420 773 728 094</p>
+    <p><a href="mailto:info@boland.cz">info@boland.cz</a></p>
+    </div>
 
-<footer>
-  &copy; 2023 Boland Logistics. All rights reserved.
-</footer>
 
+  </div>
+  <div class="kontakt2" data-aos="fade-down" data-aos-duration="850" data-aos-delay="350">
+    <p class="kontakt-typ">Poptávka</p>
+    <div class="kontakt-letter">
+      <img src="images/kontakt-letter.png" height="32" width="55"/>
+    </div>
+    <div class="kontakt-udaje">
+      <p class="kontakt-jmeno">Petr Klíč</p>
+      <p class="kontakt-cislo">+420 714 238 002</p>
+      <p><a href="mailto:info@boland.cz">petr.klic@boland.cz</a></p>
+    </div>
+  </div>
+  <div class="kontakt3" data-aos="fade-down" data-aos-duration="850" data-aos-delay="500">
+    <p class="kontakt-typ">Servis</p>
+    <div class="kontakt-letter">
+      <img src="images/kontakt-letter.png" height="32" width="55"/>
+    </div>
+    <div class="kontakt-udaje">
+      <p class="kontakt-jmeno">Tomáš Jedno</p>
+      <p class="kontakt-cislo">+420 602 164 315</p>
+      <p><a href="mailto:info@boland.cz">servis@boland.cz</a></p>
+    </div>
+  </div>
+  <div class="kontakt4" data-aos="fade-down" data-aos-duration="850" data-aos-delay="650">
+    <p class="kontakt-typ">Sklad-Morava</p>
+    <div class="kontakt-letter">
+      <img src="images/kontakt-letter.png" height="32" width="55"/>
+    </div>
+    <div class="kontakt-udaje">
+      <p class="kontakt-jmeno">Ondřej Zapálil</p>
+      <p class="kontakt-cislo">+420 716 419 332</p>
+      <p><a href="mailto:info@boland.cz">ondrej.zapalil@boland.cz</a></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <div class="footer-logo">
+    <img src="images/logo_footer.png" height="60"/>
+    <hr>
+    <div class="footer-udaje1">
+      <p>BOLAND a.s.</p>
+      <p>  Přátelství 964/4</p>
+      <p>104 00 Praha 22 – Uhříněves</p>
+      <div class="footer-udaje3">
+        <p>+420 774 050 022</p>
+        <p><a href="mailto:info@boland.cz">info@boland.cz</a></p>
+        <a href="#"><button>Poptat služby</button></a>
+      </div>
+      <p>IČ: 15770010</p>
+      <p>DIČ: CZ15770010</p>
+    </div>
+
+    <hr>
+    <div class="footer-udaje2">
+      <p>Společnost je zapsaná v OR vedeném MěS v Praze, odd. B, vl. 6120, 17.10.1991</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
-
 </html>

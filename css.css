@@ -44,6 +44,11 @@ h1{
 
 }
 
+.header img{
+    mix-blend-mode: multiply;
+    color: rgba(255,255,255,0);
+}
+
 
 .navbar a {
     color: black;
@@ -184,6 +189,12 @@ h1{
     text-align: center;
 }
 
+.reference-cely:after{
+    content: "";
+    clear: both;
+    display: flex;
+}
+
 .reference-fotky-left{
     clear:left;
     display: flex;
@@ -231,10 +242,12 @@ h1{
 .footer-logo{
     margin: 10px;
     padding: 15px;
+
 }
 
 .footer-logo img{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0);
+    ;
 }
 
 .footer-logo hr {
@@ -270,6 +283,8 @@ h1{
     color:white;
     background-color: #d8151d;
     border: 1px solid #d8151d;
+    font-size: 14px;
+    font-weight: 500;
     height: 50px;
     width: 200px;
 
@@ -388,6 +403,99 @@ h1{
     100% {
         transform: translateX(0);
     }
+}
+
+.kontakt-poptavka{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 0;
+    padding-left: 10vh;
+    overflow: hidden;
+}
+
+.kontakt-letter{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    float: left;
+    width: 20%;
+
+}
+
+.kontakt-poptavka a{
+    text-decoration: none;
+    color: black;
+}
+
+.kontakt-poptavka a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.kontakt-jmeno{
+    font-weight: bold;
+}
+.kontakt-cislo{
+    font-weight: 200;
+}
+
+.kontakt-udaje{
+    padding: 2vh;
+    justify-content: center;
+}
+
+.kontakt-typ{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.kontakt1{
+    border: 2px solid #eaeaea;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 1px;
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.kontakt2{
+    border: 2px solid #eaeaea;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 1px;
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.kontakt3{
+    border: 2px solid #eaeaea;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 1px;
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.kontakt4{
+    border: 2px solid #eaeaea;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 1px;
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
 }
 
 
